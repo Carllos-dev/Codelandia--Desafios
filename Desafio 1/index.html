@@ -105,5 +105,20 @@
             </p>
         </div>
     </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.styleGeral-div', { delay: 100 });
+        ScrollReveal().reveal('.data', { delay: 300 });
+        ScrollReveal().reveal('.titulo', { delay: 400 });
+        ScrollReveal().reveal('.texto', { delay: 500 });
+    </script>
 </body>
 </html>

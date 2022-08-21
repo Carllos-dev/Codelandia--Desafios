@@ -249,7 +249,7 @@ font-family: 'Lexend Deca', sans-serif;
         color: var(--text);
         margin-top: 3%;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: bold;
         font-family: 'Lexend Deca';
         line-height: 26px;
     }
