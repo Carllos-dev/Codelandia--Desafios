@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JordanShoes</title>
+
+    <!--Fontes-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lexend+Deca&family=Montserrat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lexend+Deca&family=Montserrat:wght@500;600;700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body>
+    <header>
+        <div id="div1-header">
+            <p>
+                Ganhe R$ 10,00 de desconto no frete
+            </p>
+        </div>
+        <div id="div2-header">
+            <h1>
+                JordanShoes
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <figure id="container-img">
+            <img src="Assets/img/wallpaper.jpeg">
+            <figcaption id="texto1-nav">
+                <h2 class="typedH2"></h2>
+                <!--<h2 id="typedAnimacao">
+                    A melhor loja de Jordan
+                </h2>-->
+                <p>
+                    O tênis Jordan é fruto de uma velha e forte<br> parceria entre a Nike e o jogador Michael Jordan.
+                </p>
+            </figcaption>
+        </figure>
+    </nav>
+    
+    <main>
+        <h3>
+            Destaques
+        </h3>
+        <p>
+            Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. 
+        </p>
+        <section id="section1">
+            <ol>
+                <li id="li1">
+                    <span class="span1">
+                        R$ 950,00
+                    </span>
+                    <span class="span2 igual-maior-mil">
+                        R$ 1000,00
+                    </span>
+                    <img src="Assets/img/1.png" alt="primeiro tênis">
+                </li>
+                <li>
+                    <span class="span1">
+                        R$ 670,00
+                    </span>
+                    <span class="span2 menor-mil">
+                        R$ 670,00
+                    </span>
+                    <img src="Assets/img/2.png" alt="segundo tênis">
+                </li>
+                <li>
+                    <span class="span1">
+                        R$ 980,00
+                    </span>
+                    <span class="span2 igual-maior-mil">
+                        R$ 1200,00
+                    </span>
+                    <img src="Assets/img/3.png" alt="terceiro tênis">
+                </li>
+                <li>
+                    <span class="span1">
+                        R$ 950,00
+                    </span>
+                    <span class="span2 menor-mil">
+                        R$ 670,00
+                    </span>
+                    <img  src="Assets/img/4.png" alt="quarto tênis">
+                </li>
+            </ol>
+        </section>
+        <section id="section2">
+            <ol>
+                <li id="section2-li1">
+                    <span class="span1">
+                        R$ 750,00
+                    </span>
+                    <span class="span2 menor-mil">
+                        R$ 940,00
+                    </span>
+                    <img  src="Assets/img/5.png" alt="quinto tênis">
+                </li>
+                <li>
+                    <span class="span1">
+                        R$ 800,00
+                    </span>
+                    <span class="span2 menor-mil">
+                        R$ 670,00
+                    </span>
+                    <img  src="Assets/img/6.png" alt="sexto tênis">
+                </li>
+                <li>
+                    <span class="span1">
+                        R$ 980,00
+                    </span>
+                    <span class="span2 igual-maior-mil">
+                        R$ 1115,00
+                    </span>
+                    <img  src="Assets/img/7.png" alt="sétimo tênis">
+                </li>
+                <li>
+                    <span class="span1"> 
+                        R$ 650,00
+                    </span>
+                    <span class="span2 menor-mil">
+                        R$ 670,00
+                    </span>
+                    <img  src="Assets/img/8.png" alt="oitavo tênis">
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <h3>
+            Todos os direitos reservados
+        </h3>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('span', { delay: 50 });
+        ScrollReveal().reveal('span', { delay: 15 });
+        ScrollReveal().reveal('#Section2-li1', { delay: 150 });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typedH2', {
+        strings: ['A melhor loja de Jordan'],
+        showCursor: false,
+        typeSpeed: 30 });
+    </script>
+</body>
+</html>

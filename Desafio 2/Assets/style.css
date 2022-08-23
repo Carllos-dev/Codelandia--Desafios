@@ -1,0 +1,270 @@
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*mobile*/
+@media (min-width: 280px) and (max-width: 1920px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background: var(--bgSite);
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        font-family: 'Montserrat'; 
+        font-style: normal;
+    }
+    header div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    header #div1-header{
+        display: flex;
+        align-items: center;
+        background: var(--title);
+        color: #F9F9F9;
+        font-size: 85%;
+        white-space: nowrap; 
+        line-height: 196%;
+    }
+    header #div2-header{
+        display: flex;
+        align-items: center;
+        font-size: 90%;
+        color: var(--title);
+        line-height: 196%;
+    }
+
+    nav{
+        display: flex;
+        width: 100%;
+        font-family: 'Monserrat';
+        font-style: normal;
+    }
+
+    *#container-img{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        background-size: auto;
+    }
+
+    nav #container-img img{
+        width: 100%;
+        height: 377px;
+        filter: brightness(40%);
+    }
+    
+    #container-img figcaption {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-left: 5%;
+    }
+
+    #container-img figcaption h2 {
+        position: absolute;
+        display: flex;
+        white-space: nowrap;
+        bottom: 40%;
+        color: #F9F9F9;
+        line-height: 200%;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    #container-img figcaption p {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        bottom: 22%;
+        color: #F9F9F9;
+        line-height: 180%;
+        font-weight: 600;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+
+    main h3{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        font-size: 28px;
+        line-height: 196%;
+        color: var(--title);
+        font-weight: 600;
+    }
+
+    main p{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 188%;
+        color: var(--text)
+    }
+
+    main img {
+        width: 100%;
+        cursor: pointer;
+        -webkit-transition: -webkit-transform .3s ease;
+        transition: transform .3s ease;
+    }
+
+    main img:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    main #section2{
+        margin-bottom: 5%;
+    }
+
+    main section ol {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    main section ol li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 290px;
+        background-color: var(--bgCard);
+        overflow: hidden;
+    }
+
+    main .span1 {
+        display: flex;
+        position: relative;
+        align-self: flex-start;
+        bottom: 8%;
+        left: 5%;
+        font-size: 170%;
+        color: darkgoldenrod;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 2;
+    }
+
+    main .span2{
+        display: flex;
+        position: relative;
+        align-self: flex-start;
+        bottom: 8%;
+        font-size: 105%;
+        text-decoration: line-through;
+        color: var(--text);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7;
+        z-index: 2;
+    }
+
+    main .igual-maior-mil{
+        left: 18%;
+    }
+
+    main .menor-mil{
+        left: 22%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 200%;
+        background: var(--title);
+        color: #F9F9F9;
+        width: 100%;
+    }
+
+}
+
+/*telas maiores*/
+@media (min-width: 620px) and (max-width: 1920px){
+    nav img{
+        object-fit: cover;
+    }
+    main img {
+        width: 90%;
+    }
+    main section ol li {
+        display: flex;
+        align-items: center;
+        width: 280px;
+        height: 290px;
+        background-color: var(--bgCard);
+    }
+    main #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
